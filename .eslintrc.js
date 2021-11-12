@@ -16,5 +16,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'func-names': 'off',
     'react/self-closing-comp': 'off',
+    'react/prop-types': 'off',
   },
 };
