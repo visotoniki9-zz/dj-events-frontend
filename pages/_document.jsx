@@ -11,8 +11,23 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
-        <body className="bg-yellow-100 dark:bg-gray-500 dark:text-white">
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+
+        <body
+          className="
+          bg-yellow-100
+          dark:bg-gray-500
+          dark:text-white
+          m-4
+          "
+        >
           <Main />
           <NextScript />
         </body>
