@@ -1,8 +1,10 @@
+import Layout from '../components/Layout';
+
 const Home = function () {
   return (
-    <div>
-      <h1>hello worlds</h1>
-    </div>
+    <Layout>
+      <h1 className="font-poppins">Home</h1>
+    </Layout>
   );
 };
 
