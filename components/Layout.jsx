@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
+import Footer from './Footer';
 
 const Layout = function ({
   title, keywords, description, children,
@@ -15,6 +16,7 @@ const Layout = function ({
       <div className="mx-14 my-auto max-w-4xl px-0 py-7">
         {children}
       </div>
+      <Footer />
     </div>
   );
 };
