@@ -1,6 +1,10 @@
+import Layout from '../../components/Layout';
+
 const EventsIndexPage = function () {
   return (
-    <div><h1>Events page</h1></div>
+    <Layout>
+      <h1>My events</h1>
+    </Layout>
   );
 };
 

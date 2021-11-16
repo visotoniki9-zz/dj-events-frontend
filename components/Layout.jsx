@@ -10,7 +10,9 @@ const Layout = function ({
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
-      {children}
+      <div className="mx-14 my-auto max-w-4xl px-0 py-7">
+        {children}
+      </div>
     </div>
   );
 };
