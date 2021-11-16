@@ -5,7 +5,7 @@ const Header = function () {
     <header className="flex flex-col text-center shadow h-auto md:flex-row items-center justify-between bg-white md:h-14 text-gray-700 py-4 ">
 
       {/* Logo */}
-      <div className="hover:text-[red] mx-5 text-xl">
+      <div className="hover:text-black text-[red] mx-5 text-xl">
         <Link href="/">DJ EVENTS</Link>
       </div>
       {/* Input */}
@@ -15,7 +15,7 @@ const Header = function () {
       />
 
       {/* Nav */}
-      <nav className="mt-2">
+      <nav className="mt-2 md:mt-0">
         <ul className="md:flex flex mx-5 text-center">
           <li className="mx-2 hover:text-black">
             <Link href="/events">Events</Link>
