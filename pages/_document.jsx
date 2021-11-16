@@ -25,7 +25,6 @@ class MyDocument extends Document {
           bg-yellow-100
           dark:bg-gray-500
           dark:text-white
-          m-4
           "
         >
           <Main />
