@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './Header';
 
 const Layout = function ({
   title, keywords, description, children,
@@ -10,6 +11,7 @@ const Layout = function ({
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
+      <Header />
       <div className="mx-14 my-auto max-w-4xl px-0 py-7">
         {children}
       </div>
