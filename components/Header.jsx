@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = function () {
   return (
-    <header className="flex flex-col text-center shadow h-auto sm:flex-row items-center justify-between bg-white sm:h-14 text-gray-700 py-4 px-5 ">
+    <header className="flex flex-col text-center shadow h-auto sm:flex-row items-center justify-between bg-white sm:h-14 text-gray-700 py-4 px-5 w-screen ">
 
       {/* Logo */}
       <div className="hover:text-black text-[red] mx-5 text-xl">
