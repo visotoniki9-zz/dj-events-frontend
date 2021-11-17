@@ -1,10 +1,13 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Header from './Header';
 import Footer from './Footer';
+import Showcase from './Showcase';
 
 const Layout = function ({
   title, keywords, description, children,
 }) {
+  const router = useRouter();
   return (
     <div>
       <Head>
@@ -13,6 +16,7 @@ const Layout = function ({
         <meta name="keywords" content={keywords} />
       </Head>
       <Header />
+      {router.pathname === '/' && <Showcase />}
       <div className="mx-14 my-auto max-w-4xl px-0 py-7">
         {children}
       </div>

@@ -7,7 +7,11 @@ module.exports = {
     fontFamily: {
       poppins: 'Poppins, sans-serif',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        showcase: "url('/images/showcase.jpg')",
+      },
+    },
   },
   variants: {
     extend: {},
