@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = function () {
   return (
-    <header className="flex flex-col text-center shadow h-auto sm:flex-row items-center justify-between bg-white sm:h-14 text-gray-700 py-4 ">
+    <header className="flex flex-col text-center shadow h-auto sm:flex-row items-center justify-between bg-white sm:h-14 text-gray-700 py-4 px-5 ">
 
       {/* Logo */}
       <div className="hover:text-black text-[red] mx-5 text-xl">
@@ -10,7 +10,7 @@ const Header = function () {
       </div>
       {/* Input */}
       <input
-        className="bg-white text-center border rounded-md py-1 outline-none focus:border-2"
+        className="bg-white text-center border rounded-md py-1 outline-none focus:border-2 focus:border-red-400"
         placeholder="Search Events"
       />
 
