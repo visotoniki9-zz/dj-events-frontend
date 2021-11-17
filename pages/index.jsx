@@ -7,7 +7,7 @@ const Home = function ({ events }) {
   return (
     <Layout>
       <h1 className="text-3xl font-bold">Upcoming Events</h1>
-      {events.map(({
+      {events.slice(0, 5).map(({
         id, image, date, name, time, slug,
       }) => (
         <EventItem
