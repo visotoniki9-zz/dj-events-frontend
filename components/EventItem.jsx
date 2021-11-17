@@ -5,13 +5,14 @@ const EventItem = function ({
   image, date, name, time, slug,
 }) {
   return (
-    <div className="block md:flex flex-col md:flex-row m-5 justify-between items-center shadow-md pr-5 text-center">
+    <div className="md:flex flex-col md:flex-row m-5 justify-between items-center shadow-md md:pr-5 text-center rounded">
       <Image
         src={image || '/images/event-default'}
         width={170}
         height={100}
+        className="rounded-l"
       />
-      <div className="flex-1 mt-2">
+      <div className="flex-1 mt-2 mx-5">
         <span>
           {date}
           {' '}
@@ -23,7 +24,7 @@ const EventItem = function ({
       </div>
       <Link href={`/events/${slug}`}>
         <button
-          className="text-white text-center bg-gray-500 hover:bg-[red] px-4 py-2 rounded-xl m-2"
+          className="text-white text-center bg-gray-500 hover:bg-[red] px-4 py-2 rounded my-2 md:m-0"
           type="button"
         >
           Details
