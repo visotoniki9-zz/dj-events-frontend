@@ -9,7 +9,7 @@ const Layout = function ({
 }) {
   const router = useRouter();
   return (
-    <div>
+    <div className="flex flex-col items-center text-center">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -17,7 +17,7 @@ const Layout = function ({
       </Head>
       <Header />
       {router.pathname === '/' && <Showcase />}
-      <div className="mx-14 my-auto max-w-4xl px-0 py-7">
+      <div className="max-w-4xl w-full px-0 py-7">
         {children}
       </div>
       <Footer />
