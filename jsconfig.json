@@ -5,18 +5,9 @@
             "@components/*": [
                 "components/*"
             ],
-            "@contentful/*": [
-                "contentful/*"
+            "@config/*": [
+                "config/*"
             ],
-            "@layouts/*": [
-                "layouts/*"
-            ],
-            "@styles/*": [
-                "styles/*"
-            ],
-            "@utils/*": [
-                "utils/*"
-            ]
         }
     }
 }
