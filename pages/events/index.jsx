@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
   return {
     props: events,
-    // revalidate: 1,
+    revalidate: 1,
   };
 }
 export default Home;
