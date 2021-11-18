@@ -1,12 +1,26 @@
 import Layout from '@components/Layout';
+import Image from 'next/image';
 import { API_URL } from '@config/index';
 
 const EventPage = function ({ events }) {
-  console.log(events);
+  const {
+    address, date, description, image, name, performers, time, venue,
+  } = events[0];
   return (
     <Layout>
-      <h1>Event page</h1>
-      <h1>{events[0].name}</h1>
+      <div className="md:py-5">
+        <Image
+          src={image}
+          width={900}
+          height={600}
+        />
+      </div>
+      <p>{`${date} at ${time}`}</p>
+      <h1 className="text-3xl font-bold mt-2 mb-4 px-4">{name}</h1>
+      <p>{performers}</p>
+      <p className="py-2 px-4">{description}</p>
+      <p>{`${venue} at ${address}`}</p>
+
     </Layout>
   );
 };
@@ -32,13 +46,6 @@ export async function getStaticProps({ params: { slug } }) {
   const events = await res.json();
   return {
     props: { events },
+    revalidate: 1,
   };
 }
-
-// export async function getServerSideProps({ query: { slug } }) {
-//   const res = await fetch(`${API_URL}/api/events/${slug}`);
-//   const events = await res.json();
-//   return {
-//     props: { events },
-//   };
-// }
