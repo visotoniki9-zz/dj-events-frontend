@@ -17,5 +17,6 @@ module.exports = {
     'func-names': 'off',
     'react/self-closing-comp': 'off',
     'react/prop-types': 'off',
+    'import/no-unresolved': 'off',
   },
 };
