@@ -17,7 +17,7 @@ const Layout = function ({
       </Head>
       <Header />
       {router.pathname === '/' && <Showcase />}
-      <div className="max-w-4xl w-full px-0 py-7">
+      <div className="max-w-4xl w-full px-0">
         {children}
       </div>
       <Footer />

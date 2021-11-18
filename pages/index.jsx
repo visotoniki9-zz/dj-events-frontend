@@ -6,7 +6,7 @@ import EventItem from '../components/EventItem';
 const Home = function ({ events }) {
   return (
     <Layout>
-      <h1 className="text-3xl font-bold">Upcoming Events</h1>
+      <h1 className="text-3xl font-bold pt-7">Upcoming Events</h1>
       {events.slice(0, 5).map(({
         id, image, date, name, time, slug,
       }) => (
@@ -40,7 +40,7 @@ export async function getStaticProps() {
 
   return {
     props: events,
-    // revalidate: 1,
+    revalidate: 1,
   };
 }
 export default Home;
