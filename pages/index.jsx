@@ -1,9 +1,9 @@
+import Link from 'next/link';
 import { API_URL } from '../config/index';
 import Layout from '../components/Layout';
 import EventItem from '../components/EventItem';
 
 const Home = function ({ events }) {
-  console.log(events);
   return (
     <Layout>
       <h1 className="text-3xl font-bold">Upcoming Events</h1>
@@ -19,6 +19,17 @@ const Home = function ({ events }) {
           slug={slug}
         />
       ))}
+      {events.length > 0 && (
+        <Link href="/events">
+          <button
+            type="button"
+            className="bg-black text-white rounded p-4 hover:bg-[red]"
+          >
+            View all events
+
+          </button>
+        </Link>
+      )}
     </Layout>
   );
 };
