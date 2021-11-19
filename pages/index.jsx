@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import EventItem from '../components/EventItem';
 
 const Home = function ({ events }) {
-  console.log(events[0].image.formats.thumbnail.url);
   return (
     <Layout>
       <h1 className="text-3xl font-bold pt-7">Upcoming Events</h1>
