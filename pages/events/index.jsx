@@ -23,11 +23,11 @@ const Home = function ({ events }) {
 };
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/events`);
+  const res = await fetch(`${API_URL}/events`);
   const events = await res.json();
 
   return {
-    props: events,
+    props: { events },
     revalidate: 1,
   };
 }

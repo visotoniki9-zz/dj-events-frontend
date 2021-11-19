@@ -4,10 +4,11 @@ import Layout from '../components/Layout';
 import EventItem from '../components/EventItem';
 
 const Home = function ({ events }) {
+  console.log(events[0].image.formats.thumbnail.url);
   return (
     <Layout>
       <h1 className="text-3xl font-bold pt-7">Upcoming Events</h1>
-      {events.slice(0, 5).map(({
+      {events.map(({
         id, image, date, name, time, slug,
       }) => (
         <EventItem
@@ -35,11 +36,10 @@ const Home = function ({ events }) {
 };
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/events`);
+  const res = await fetch(`${API_URL}/events?_sort=date:ASC&_limit=3`);
   const events = await res.json();
-
   return {
-    props: events,
+    props: { events },
     revalidate: 1,
   };
 }
