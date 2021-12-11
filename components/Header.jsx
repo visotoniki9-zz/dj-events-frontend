@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Search from '@components/Search';
 
 const Header = function () {
   return (
@@ -9,11 +10,7 @@ const Header = function () {
         <Link href="/">DJ EVENTS</Link>
       </div>
       {/* Input */}
-      <input
-        className="bg-white text-center border rounded-md py-1 outline-none focus:border-2 focus:border-red-400"
-        placeholder="Search Events"
-      />
-
+      <Search />
       {/* Nav */}
       <nav className="mt-2 sm:mt-0">
         <ul className="sm:flex flex mx-5 text-center">
