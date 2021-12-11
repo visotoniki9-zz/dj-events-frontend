@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Search from '@components/Search';
+import { LoginIcon } from '@heroicons/react/outline';
 
 const Header = function () {
   return (
@@ -14,11 +15,18 @@ const Header = function () {
       {/* Nav */}
       <nav className="mt-2 sm:mt-0">
         <ul className="sm:flex flex mx-5 text-center">
-          <li className="mx-2 hover:text-black">
+          <li className="mx-2 hover:text-black py-2">
             <Link href="/events">Events</Link>
           </li>
-          <li className="mx-2 hover:text-black">
-            <Link href="/events">Login</Link>
+          <li className="mx-2 hover:text-black py-2">
+            <Link href="/events/add">Add Event</Link>
+          </li>
+          <li className="mx-2 hover:text-black py-2">
+            <Link href="/dashboard">Dashboard</Link>
+          </li>
+          <li className="flex mx-2 text-white hover:bg-[red] bg-black py-2 px-3 ml-8 rounded-md">
+            <LoginIcon className="w-4" />
+            <Link href="/login">Login</Link>
           </li>
         </ul>
       </nav>
