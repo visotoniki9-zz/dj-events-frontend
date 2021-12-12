@@ -18,5 +18,7 @@ module.exports = {
     'react/self-closing-comp': 'off',
     'react/prop-types': 'off',
     'import/no-unresolved': 'off',
+    'no-console': 'off',
+    'no-unused-expressions': 'off',
   },
 };
