@@ -4,7 +4,7 @@ import { LoginIcon } from '@heroicons/react/outline';
 
 const Header = function () {
   return (
-    <header className="flex flex-col text-center shadow h-auto sm:flex-row items-center justify-between bg-white sm:h-14 text-gray-700 py-4 px-5 w-screen ">
+    <header className="flex flex-col text-center shadow h-auto md:flex-row items-center justify-between bg-white md:h-14 text-gray-700 py-4 px-5 w-screen ">
 
       {/* Logo */}
       <div className="hover:text-black text-[red] mx-5 text-xl">
@@ -13,8 +13,8 @@ const Header = function () {
       {/* Input */}
       <Search />
       {/* Nav */}
-      <nav className="mt-2 sm:mt-0">
-        <ul className="sm:flex flex mx-5 text-center">
+      <nav className="mt-2 md:mt-0">
+        <ul className="flex mx-5 text-center ">
           <li className="mx-2 hover:text-black py-2">
             <Link href="/events">Events</Link>
           </li>
