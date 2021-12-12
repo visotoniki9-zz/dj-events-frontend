@@ -9,7 +9,7 @@
             "name": "Throwback Thursdays with DJ Manny Duke",
             "performers": "DJ Manny Duke",
             "slug": "throwback-thursdays-with-dj-manny-duke",
-            "time": "10:00 PM EST",
+            "time": "10:00 PM",
             "venue": "Horizon Club"
         },
         {
@@ -21,7 +21,7 @@
             "name": "Boom Dance Festival Experience",
             "performers": "DJ LUCK & MC NEAT, NICKY BLACKMARKET, DJ NICKY BLACKMARKET, RATPACK",
             "slug": "boom-dance-festival-experience",
-            "time": "8:00 PM EST",
+            "time": "8:00 PM",
             "venue": "Blackjacks"
         },
         {
@@ -33,7 +33,7 @@
             "name": "Encore Night Boat Party",
             "performers": "Bad Boy Bill",
             "slug": "encore-night-boat-party",
-            "time": "7:00 PM EST",
+            "time": "7:00 PM",
             "venue": "Encore"
         },
         {
@@ -45,7 +45,7 @@
             "name": "Jam Concert Live",
             "performers": "DJ RNB",
             "slug": "jam-concert-live",
-            "time": "10:00 PM EST",
+            "time": "10:00 PM",
             "venue": "Club Ozone"
         },
         {
@@ -57,7 +57,7 @@
             "name": "UnMute Rock Festival",
             "performers": "Big Wednesday, Black Pyre, Calling Apollo",
             "slug": "unmute-rock-festival",
-            "time": "8:00 PM EST",
+            "time": "8:00 PM",
             "venue": "Studio 54"
         },
         {
@@ -69,7 +69,7 @@
             "name": "Soul Kitchen Party",
             "performers": "A-Trak, Nightmares on Wax, Rakim, Jay Electronica",
             "slug": "soul-kitchen-party",
-            "time": "8:00 PM EST",
+            "time": "8:00 PM",
             "venue": "Onyx Club"
         }
     ]
