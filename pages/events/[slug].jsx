@@ -26,7 +26,7 @@ const EventPage = function ({ events }) {
     console.log('delete');
   };
   const editEvent = () => {
-    console.log('edit');
+    router.push(`/events/edit/${events[0].id}`);
   };
   const {
     address, date, description, image, name, performers, time, venue,
