@@ -22,5 +22,7 @@ module.exports = {
     'no-unused-expressions': 'off',
     'no-restricted-globals': 'off',
     'no-alert': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'no-shadow':'off'
   },
 };
