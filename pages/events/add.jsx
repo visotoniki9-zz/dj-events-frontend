@@ -135,7 +135,7 @@ const AddPage = function () {
                 Time
               </label>
               <input
-                type="time"
+                type="text"
                 id="time"
                 name="time"
                 value={values.time}
