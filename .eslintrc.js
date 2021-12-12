@@ -23,6 +23,6 @@ module.exports = {
     'no-restricted-globals': 'off',
     'no-alert': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
-    'no-shadow':'off'
+    'no-shadow': 'off',
   },
 };
