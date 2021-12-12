@@ -19,7 +19,7 @@ const Header = function () {
             <Link href="/events">Events</Link>
           </li>
           <li className="mx-2 hover:text-black py-2">
-            <Link href="/events/add">Add Event</Link>
+            <Link href="/events/add">AddEvent</Link>
           </li>
           <li className="mx-2 hover:text-black py-2">
             <Link href="/dashboard">Dashboard</Link>
