@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import Layout from '@components/Layout';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
