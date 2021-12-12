@@ -7,7 +7,7 @@ const EventItem = function ({
   return (
     <div className="md:flex flex-col md:flex-row m-5 justify-between items-center shadow-md md:pr-5 text-center rounded">
       <Image
-        src={image.formats.thumbnail.url || '/images/event-default'}
+        src={image?.formats?.thumbnail?.url || '/images/event-default.png'}
         width={250}
         height={167}
         className="rounded-l"
