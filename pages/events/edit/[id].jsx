@@ -9,7 +9,7 @@ import moment from 'moment';
 import Image from 'next/image';
 
 const EditEventPage = function ({
-  name, performers, venue, address, date, time, description, image,
+  name, performers, venue, address, date, time, description, image, id,
 }) {
   const [values, setValues] = useState({
     name,
@@ -36,8 +36,8 @@ const EditEventPage = function ({
     if (hasEmptyFields) {
       toast.error('Please fill in all the fields.', { theme: 'colored' });
     } else {
-      const res = await fetch(`${API_URL}/events`, {
-        method: 'POST',
+      const res = await fetch(`${API_URL}/events/${id}`, {
+        method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
