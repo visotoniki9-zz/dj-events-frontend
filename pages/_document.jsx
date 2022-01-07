@@ -23,13 +23,13 @@ class MyDocument extends Document {
         <body
           className="
           font-poppins
-          bg-yellow-100
           dark:bg-white
           dark:text-black
           "
         >
           <Main />
           <NextScript />
+          <div id="modal-root"></div>
         </body>
       </Html>
     );
