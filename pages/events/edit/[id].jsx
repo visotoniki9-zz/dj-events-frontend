@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import moment from 'moment';
 import Image from 'next/image';
+import Modal from '@components/Modal';
 
 const EditEventPage = function ({
   name, performers, venue, address, date, time, description, image, id,
@@ -25,6 +26,8 @@ const EditEventPage = function ({
     width: image?.formats?.thumbnail?.width || 150,
     height: image?.formats?.thumbnail?.height || 100,
   });
+
+  const [showModal, setShowModal] = useState(false);
 
   const router = useRouter();
 
@@ -67,7 +70,11 @@ const EditEventPage = function ({
         {/* Page title */}
         <h1 className="text-3xl font-bold mb-8">Edit Event</h1>
         {/* Image preview */}
-        <div className="text-center relative">
+        <button
+          type="button"
+          className=" -translate-x-1/2 left-1/2  relative"
+          onClick={() => { setShowModal(true); }}
+        >
           <Image
             src={imagePreview.src}
             width={imagePreview.width}
@@ -77,7 +84,7 @@ const EditEventPage = function ({
           <p className="text-white text-xl bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 rounded-md">
             Click to Set Image
           </p>
-        </div>
+        </button>
         {/* Toast */}
         <ToastContainer closeOnClick />
         {/* Forms */}
@@ -185,6 +192,14 @@ const EditEventPage = function ({
           />
         </form>
       </div>
+      <Modal
+        show={showModal}
+        title={name}
+        onClose={() => setShowModal(false)}
+      >
+        Image
+
+      </Modal>
     </Layout>
   );
 };
