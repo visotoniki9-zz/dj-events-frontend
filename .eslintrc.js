@@ -24,5 +24,7 @@ module.exports = {
     'no-alert': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
     'no-shadow': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'eslintjsx-a11y/no-static-element-interactions':'off'
   },
 };
